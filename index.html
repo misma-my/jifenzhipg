@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李荣先生积分制管理分享课 | 槟城站</title>
+    <title>21世纪创新人力资本管理模式 “积分制管理”</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
     <style>
@@ -49,7 +49,7 @@
         .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* 水平居中 */
     flex-direction: column;
     align-content: space-around;
 }
@@ -113,6 +113,7 @@
             display: inline-block;
             margin-top: 10px;
             animation: pulse 2s infinite;
+            text-align: center; /* 新增：居中对齐 */
         }
         
         @keyframes pulse {
@@ -553,6 +554,26 @@
             text-align: center;
             padding: 20px;
         }
+        
+        /* 新增样式 */
+        .center-title {
+            text-align: center;
+        }
+    
+        .center-title span {
+            display: block;
+            margin: 5px 0;
+        }
+    
+        .main-title {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+    
+        .sub-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -563,8 +584,10 @@
                 <div class="logo"><img src="mpmlogo.png" alt="logo"></div>
                 <div class="logo-section">
                     <div class="title-section">
-                        <h1>积分制管理分享课</h1>
-                        <div class="subtitle">提升企业管理效率的核心方法论</div>
+                        <h1 class="center-title">
+                            <span class="main-title">21世纪创新人力资本管理模式</span>
+                            <span class="sub-title">“积分制管理”</span>
+                        </h1>
                         <div class="invite-text">
                             <i class="fas fa-gift"></i> 邀请您体验积分制管理公开课 →
                         </div>
@@ -572,9 +595,9 @@
                 </div>
                 <div class="event-info animated delay-1">
                     <div class="date">2025年7月1日</div>
-                    <div class="time">晚上8:00 - 10:00</div>
+                    <div class="time">晚上7:30 - 9:30</div>
                     <div class="location">
-                        <i class="fas fa-map-marker-alt location-icon"></i> 槟城站 · 国际会议中心
+                        <i class="fas fa-map-marker-alt location-icon"></i> 槟城站 ·  光华日报礼堂
                     </div>
                 </div>
             </div>
@@ -587,13 +610,13 @@
             <div class="speaker-info">
                 <h2 class="speaker-title">李荣 先生</h2>
                 <div class="speaker-subtitle">湖北群艺"积分制管理"</div>
-                <div class="speaker-position">积分制管理学院院长 · 群艺集团董事长</div>
+                <div class="speaker-position">积分制管理创始人 · 群艺集团董事长</div>
                 <div class="innovation">
-                    <div class="innovation-title">国家企业管理创新模式</div>
-                    <p>积分制管理是一种科学、系统、高效的管理方法，已被国家认可为创新管理模式，广泛应用于各类企事业单位。</p>
+                    <div class="innovation-title">企业管理创新模式</div>
+                    <p>积分制管理是一种科学、系统、高效的管理方法，已被企业家认可为创新管理模式，广泛应用于各类企事业单位。</p>
                 </div>
                 <div class="speaker-bio">
-                    <p>李荣先生是中国积分制管理的创始人，拥有20餘enterprise管理实战经验。他创立的积分制管理体系已帮助超过10,000家企业提升管理效率，激发员工潜能。</p>
+                    <p>李荣先生是中国积分制管理的创始人，拥有20余企业管理实战经验。他创立的积分制管理体系已帮助超过10,000家企业提升管理效率，激发员工潜能。</p>
                     <p>李荣先生将积分制管理从理论到实践进行系统化整合，形成了一套科学、可量化、易操作的管理方法，被众多企业家誉为"管理效率提升的革命性方法"。</p>
                 </div>
                 <div class="books-section">
@@ -642,7 +665,7 @@
         
         <!-- 报名表单 -->
         <section class="registration-section animated delay-3">
-            <h2 class="section-title">报名</h2>
+            <h2 class="section-title">↓ 报名 ↓</h2>
             <div class="form-container">
                 <form id="registrationForm">
                     <button type="button" class="submit-btn" onclick="window.open('https://forms.gle/Kqu55FrMdrbePTqu8', '_blank')">
@@ -661,13 +684,13 @@
                 <div class="organizers-title">主办单位</div>
                 <div class="organizer-list">
                    
-                    <div>马来西亚积分制管理协会(MISMA) | 光华日报</div>
+                    <div>马来西亚积分制管理协会(MISMA) | 光华日报 联办</div>
                 </div>
             </div>
             
             <div class="contact-info">
-                <a href="tel:01633560699">
-                    <i class="fas fa-phone-alt"></i> 016-33560699 Roy Wong
+                <a href="tel:询问 016-212 4221">
+                    <i class="fas fa-phone-alt"></i> 联系我们
                 </a>
                 <a href="https://www.facebook.com/jifenzhi" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
@@ -712,7 +735,7 @@
             const message = `报名信息：%0A%0A姓名：${name}%0A电话：${phone}%0A邮箱：${email}%0A公司：${company}%0A%0A我想报名参加李荣先生的积分制管理分享课`;
             
             // 创建WhatsApp链接
-            const whatsappUrl = `https://wa.me/601633560699?text=${message}`;
+            const whatsappUrl = `https://wa.me/60162124221 ?text=${message}`;
             
             // 打开WhatsApp
             window.open(whatsappUrl, '_blank');
