@@ -104,14 +104,14 @@
         }
         
         .invite-text {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: #1a2a6c;
             padding: 8px 15px;
             background: rgba(178, 31, 31, 0.1);
             border-radius: 8px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 8px;
             animation: pulse 2s infinite;
             text-align: center; /* 新增：居中对齐 */
         }
@@ -574,26 +574,45 @@
             font-size: 2.2rem;
             font-weight: 600;
         }
+    
+        /* 新增跳动动画 */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* 应用跳动动画到提交按钮 */
+        .submit-btn {
+            animation: bounce 1s infinite ease-in-out;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- 头部 -->
         <header class="animated">
+            <!-- 新增 LOGO 容器 -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="mpmlogo.png" alt="MPM Logo" style="width: 150px; height: auto;">
+            </div>
             <div class="header-content">
-                <div class="logo"><img src="mpmlogo.png" alt="logo"></div>
                 <div class="logo-section">
                     <div class="title-section">
                         <h1 class="center-title">
                             <span class="main-title">21世纪创新人力资本管理模式</span>
                             <span class="sub-title">“积分制管理”</span>
                         </h1>
-                        <div class="invite-text">
-                            <i class="fas fa-gift"></i> 邀请您体验积分制管理公开课 →
-                        </div>
                     </div>
                 </div>
+                <!-- 移动邀请文本到日期框上方 -->
                 <div class="event-info animated delay-1">
+                    <p style="font-size: 1.3rem; font-weight: bold; color: #b21f1f; text-align: center;">
+                        邀请您体验积分制管理公开课 →
+                    </p>
                     <div class="date">2025年7月1日</div>
                     <div class="time">晚上7:30 - 9:30</div>
                     <div class="location">
@@ -681,10 +700,10 @@
 
             <!-- 主办单位信息 -->
             <div class="organizers">
-                <div class="organizers-title">主办单位</div>
+                <div class="organizers-title">主办单位 </div>
                 <div class="organizer-list">
                    
-                    <div>马来西亚积分制管理协会(MISMA) | 光华日报 联办</div>
+                    <div>马来西亚积分制管理协会(MISMA) | 光华日报 （媒体伙伴）</div>
                 </div>
             </div>
             
